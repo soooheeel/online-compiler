@@ -89,7 +89,7 @@ int main()
                 type: "GET",
                 headers: {
                     "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-	                "x-rapidapi-key": '060d82312fmsh6cf76cc5caf6220p1b0ef1jsnc5a290c6b6d8'
+	                "x-rapidapi-key": API_KEY
                 },
                 success: function (data, textStatus, jqXHR) {
                     if ([1, 2].includes(data["status"]["id"])) {
@@ -121,7 +121,7 @@ int main()
                 contentType: "application/json",
                 headers: {
                     "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-	                "x-rapidapi-key": '060d82312fmsh6cf76cc5caf6220p1b0ef1jsnc5a290c6b6d8'
+	                "x-rapidapi-key": API_KEY
                 },
                 data: JSON.stringify({
                     "language_id": language_to_id[$("#lang").val()],
