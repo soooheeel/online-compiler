@@ -5,7 +5,7 @@
 </head>
 
 <body style="background-color: #eee; font-family: monospace; margin: 8px;" >
-    <h2>🔥 Online Compiler<sub><small> Powered by <a href="https://bit.ly/2UCsWRM">Judge0</a></small></sub></h2>
+    
 
     <h4>Source Code</h4>
     <textarea id="source" style="width: calc(50% - 8px); height: 40%; resize: vertical;">
@@ -29,21 +29,15 @@ int main()
 
     <h4>Language</h4>
     <select id="lang">
-        <option>Bash</option>
-        <option>C#</option>
+   
         <option selected>C++</option>
         <option>C</option>
         <option>Java</option>
         <option>Python</option>
-        <option>Ruby</option>
     </select>
 
     <h4>Input</h4>
     <textarea id="input" style="width: calc(50% - 8px); height: 10%; resize: vertical;">John</textarea>
-
-    <h4>Expected Output<sub><small>(optional)</small></sub></h4>
-    <textarea id="expected-output" style="width: calc(50% - 8px); height: 10%; resize: vertical;"></textarea>
-
     </br></br>
     <button id="run" onclick="run()">▶️ Run (Ctrl + Enter)</button>
 
@@ -55,13 +49,13 @@ int main()
         API_KEY = "060d82312fmsh6cf76cc5caf6220p1b0ef1jsnc5a290c6b6d8"; // Get yours for free at https://judge0.com/ce or https://judge0.com/extra-ce
 
         var language_to_id = {
-            "Bash": 46,
+            
             "C": 50,
-            "C#": 51,
+            
             "C++": 54,
             "Java": 62,
             "Python": 71,
-            "Ruby": 72
+            
         };
 
         function encode(str) {
