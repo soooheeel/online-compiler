@@ -1,7 +1,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Compiler</title>
+    <title>C++ Online Compiler</title>
 </head>
 
 <body style="background-color: #eee; font-family: monospace; margin: 8px;" >
@@ -98,7 +98,7 @@ int main()
 
         function run() {
             $("#run").prop("disabled", true);
-            $("#output").val("⚙️ Creating submission...");
+            $("#output").val("⚙️ Please wait...");
 
             let encodedExpectedOutput = encode($("#expected-output").val());
             if (encodedExpectedOutput === "") {
@@ -121,7 +121,7 @@ int main()
                     "redirect_stderr_to_stdout": true
                 }),
                 success: function(data, textStatus, jqXHR) {
-                    $("#output").val($("#output").val() + "\n🎉 Submission created.");
+                    $("#output").val($("#output").val() + "\n Your code is compiled");
                     setTimeout(function() { check(data["token"]) }, 2000);
                 },
                 error: errorHandler
