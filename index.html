@@ -10,19 +10,16 @@
     <h4>Source Code</h4>
     <textarea id="source" style="width: calc(50% - 8px); height: 40%; resize: vertical;">
 #include <iostream>
-#include <string>
-
-#pragma message "Hello from compilation!"
+using namespace std;
 
 int main()
 {
-    std::string name;
-    std::cin >> name;
+    string name;
+    cin >> name;
 
-    std::cout << "Hi " << name << "!\n";
-    std::cerr << "This is a dummy error message " << name << ".\n";
-    std::cout << "But don't worry " << name << ", everything is fine! :)\n";
-
+    cout << "Hi " << name << "!\n";
+    cout << "This is a dummy error message " << name << ".\n";
+    cout << "But don't worry " << name << ", everything is fine! :)\n";
     return 0;
 }
 </textarea>
@@ -41,8 +38,7 @@ int main()
     </br></br>
     <button id="run" onclick="run()">▶️ Run (Ctrl + Enter)</button>
 
-    <small style="width: 50%; text-align: center; color: #ccc;">Source code available on <a style="color: #bbb; font-weight: bold;" href="https://github.com/hermanzdosilovic/online-compiler">GitHub</a>.</p>
-
+    
     <textarea readonly id="output" style="width: 50%; height: 100%; position: fixed; top: 0; right: 0; resize: none;"></textarea>
 
     <script type="text/javascript">
